@@ -273,19 +273,6 @@
 
 <h1>✨ Affirmations</h1>
 
-<!-- Affirmations list card -->
-<div class="card">
-  <div class="card-header">
-    <h2>My Affirmations</h2>
-    <span id="sync-status"></span>
-  </div>
-  <ul id="affirmation-list"></ul>
-  <div class="add-row">
-    <input type="text" id="new-affirmation" placeholder="Add a new affirmation…" maxlength="300">
-    <button class="btn-add" onclick="addAffirmation()">Add</button>
-  </div>
-</div>
-
 <!-- Practice mode card -->
 <div class="card">
   <h2 style="margin-bottom:16px">Practice Mode</h2>
@@ -311,6 +298,10 @@
       <option value="4">4 sec</option>
       <option value="5">5 sec</option>
       <option value="6">6 sec</option>
+      <option value="7">7 sec</option>
+      <option value="8">8 sec</option>
+      <option value="9">9 sec</option>
+      <option value="10">10 sec</option>
     </select>
 
     <label for="shuffle-toggle">Shuffle</label>
@@ -323,13 +314,26 @@
     </div>
   </div>
 
-  <button class="btn-practice" id="practice-btn" onclick="togglePractice()">▶ Start</button>
-
   <div id="practice-display">
     <div id="timer-display">0:00</div>
     <div id="current-affirmation"></div>
     <div id="practice-status"></div>
     <div class="progress-bar"><div id="progress-fill"></div></div>
+  </div>
+
+  <button class="btn-practice" id="practice-btn" onclick="togglePractice()">▶ Start</button>
+</div>
+
+<!-- Affirmations list card -->
+<div class="card">
+  <div class="card-header">
+    <h2>My Affirmations</h2>
+    <span id="sync-status"></span>
+  </div>
+  <ul id="affirmation-list"></ul>
+  <div class="add-row">
+    <input type="text" id="new-affirmation" placeholder="Add a new affirmation…" maxlength="300">
+    <button class="btn-add" onclick="addAffirmation()">Add</button>
   </div>
 </div>
 
